@@ -1,0 +1,18 @@
+body {
+	background-color: gray;
+	background-image: url(https://stmed.net/sites/default/files/food-wallpapers-28249-101905.jpg);
+}
+
+#main {
+	background-color: white;
+	padding: 20px;
+	margin-top: 5%;
+}
+
+#signin {
+	position: relative;
+}
+.sinbtn {
+	background-color: gray;
+	border-color: gray;
+}
