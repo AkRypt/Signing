@@ -5,8 +5,16 @@ body {
 
 #main {
 	background-color: white;
-	padding: 30px;
+	padding: 40px;
 	margin-top: 2%;
 	margin-bottom: 2%;
+	width: 40%;
+}
+
+.wid {
 	width: 50%;
+}
+#fn, #ln, #un, #em, #pw, #ph {
+	color: red;
+	font-family: Raleway;
 }

@@ -10,44 +10,58 @@
 	<link rel="stylesheet" type="text/css" href="signup.css">
 </head>
 <body>
+
+    <!-- THIS IS PHP PART -->
+    <!-- <?php 
+        include 'validation.php';
+    ?> -->
+
+    <!-- THIS IS HTML PART -->
 	<div class="container" id="main">
 	<div style="color: green;text-align: center;font-family: Raleway;">
 		<h1>Welcome!</h1>
 		<p>Please fill in the details below.</p>
 	</div>
 
+	<p style="color:red;font-family:Raleway">* All fields are required</p>
+
 	<div class="form-group">
 		<label for="fname">First Name</label>
-		<input type="text" class="form-control" placeholder="First Name">
+		<p id="fn"><span><input type="text" class="form-control wid" id="fni" 
+			placeholder="First Name" pattern="[A-Z]{1}[a-zA-Z]{1,}" maxlength="15"></span></p>
 		<br>
 		<label for="lname">Last Name</label>
-		<input type="text" class="form-control" placeholder="Last Name">
+		<p id="ln"><input type="text" class="form-control wid" id="lni" 
+			placeholder="Last Name" pattern="[A-Z]{1}[a-zA-Z]{1,}" maxlength="15"></p>
 		<br>
 		<label for="email">Email</label>
-		<input type="text" class="form-control" placeholder="Email">
+		<p id="em"><input type="text" class="form-control wid" id="emi" placeholder="Email"></p>
 		<br>
 		<label for="uname">Username</label>
-		<input type="text" class="form-control" placeholder="Username">
+		<p id="un"><input type="text" class="form-control wid"  id="uni" placeholder="Username"></p>
 		<br>
 		<label for="pass">Password</label>
-		<input type="Password" class="form-control" placeholder="Password">
+		<p id="pw"><input type="Password" class="form-control wid" id="pwi" placeholder="Password"></p>
 		<br>
 		<label for="phno">Phone Number</label>
 		<div class="row">
 		<label></label>
-			<input type="text" class="form-control"  style="width: 40%;margin-left: 2%" placeholder="Phone Number" value="+91" 
-			maxlength="13" pattern="[+]{1}[0-9]{2}[1-9]{1}[0-9]{9}"> 
+			<p id="ph"><input type="text" class="form-control wid" id="phi" style="width: 100%;margin-left: 5%" placeholder="Phone Number" value="+91" 
+			maxlength="13" pattern="[+]{1}[0-9]{2}[1-9]{1}[0-9]{9}"> </p>
 		</div>
 		<br>
 
 		<br>
 		<div style="text-align: center;">
-			<button class="btn btn-success">Sign Up</button>
+            <button class="btn btn-success" id="sup">Sign Up</button>
+            <!-- <input type="submit" name="submit" id="sup" class="btn btn-success" value="Sign Up"> -->
+            
 		</div>
 	</div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="signup.js"></script>
 </body>
 </html>

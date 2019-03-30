@@ -15,4 +15,10 @@ body {
 .sinbtn {
 	background-color: gray;
 	border-color: gray;
+	position: relative;
+}
+
+#un, #pw {
+	color: red;
+	font-family: Raleway;
 }
